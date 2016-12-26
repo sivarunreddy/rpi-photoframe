@@ -14,6 +14,6 @@ module.exports = SolrClient => (imageData) => {
         if (error) {
             message = error;
         }
-        console.log(imageData.path + " - Solr - " + message)
+        console.log(imageData.path + " - Solr - " + JSON.stringify(message))
     });
 }
